@@ -1,0 +1,558 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Noto+Sans:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* SECTION NAV_BAR */
+.nav_bar{
+    height:31rem;
+    border:1px solid black;
+    background: url("images/home-img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav_bar .box button ,.nav_bar #cart button , #about button,#menu ul li button ,#map .touch button, #blogs button{
+    background-color: #D4AC7C;
+    color:#fff;
+    height:2rem;
+    width:6rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+.nav_bar .box button:hover, .nav_bar #cart button:hover ,
+ #about button:hover,#menu ul li button:hover,#map .touch button:hover,#blogs button:hover{
+    opacity: 0.65;
+    font-weight: bold;
+}
+.nav_bar .box{
+    
+    height:15rem;
+    width:30rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    
+}
+.box .h1{
+    margin-top: 2rem;
+    
+}
+.nav_bar .box ,.nav_bar #search, .nav_bar #cart{
+    /* border:1px solid white; */
+}
+.nav_bar #cart button{
+    margin-left: 3.5rem;
+}
+.nav_bar #search{
+    height: 2rem;
+    width:14rem;
+    margin-left:5rem;
+    background-color:#D4AC7C;
+    border: none;
+    border-radius: 0.3rem;
+    color:#fff;
+    font-family: 'Cormorant', serif;
+    /* visibility: hidden; */
+    display: none;
+}
+.nav_bar .checkbtn i{
+    margin-left:23rem;
+}
+.nav_bar #cart{
+    margin-left:0.5rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    /* visibility: hidden; */
+    display: none;
+    padding-left: 0;
+}
+.nav_bar #cart #box1,.nav_bar #cart #box2,.nav_bar #cart #box3,.nav_bar #cart #box4{
+     display: flex;
+}
+.nav_bar .cart .boxes{
+    height:3rem;
+    width:11rem;
+    /* width:fit-content; */
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    /* align-items:center; */
+    padding-left:0.1rem;
+    padding-right: 0.3rem;
+    
+}
+.nav_bar .box h1{
+    font-size: 3rem;
+    color:#fff;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+}
+.nav_bar .cart .boxes img{
+    height: 3rem;
+    width:3.2rem;
+    /* border:1px solid red; */
+    
+}
+.nav_bar .cart .boxes p{
+    margin-left: 0.5rem;
+}
+.nav_bar .cart .boxes i:hover{
+    color:red;
+    transition:all 0.3s ease;
+}
+/* NAVIGATION BAR */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 1rem 1rem 2rem;
+    font-family: 'Cormorant', serif;
+    /* position: fixed; */
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    margin-right: 1.3rem;
+    color:rgb(139, 130, 130);
+    letter-spacing: 1px;
+}
+nav ul li i{
+    font-size: 1.2rem;
+    /* width:5rem; */
+    color:rgb(139, 130, 130);
+    margin-right: 1.5rem;
+   
+}
+hr{
+    background-color:rgb(139, 130, 130);
+    height:0.1rem;
+    outline:none;
+}
+
+nav ul li a:hover,nav ul li i:hover{
+    color:#fff;
+    /* transition:0.3s all ease; */
+}
+.checkbtn{
+    font-size: 2rem;
+    color:#fff;
+    float: right;
+    /* line-height: 4rem; */
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+#check, .checkbtn{
+    display: none;
+}
+
+
+/* ABOUT US */
+#about{
+    background-color: #000;
+    padding:2rem 5rem;
+}
+#about #right_box a{
+    display: none;
+}
+#about h1,#review h1,#products h1,#map h1, #blogs h1,#menu h1{
+    color:#fff;
+    text-align: center;
+    font-size: 1.9rem;
+    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Cormorant', serif; */
+    letter-spacing: 2px;
+}
+#about #right_box{
+    height: 22rem;
+    background-color: rgb(48, 48, 55);
+   /* border: 1px solid red; */
+   padding: 2rem;
+    
+}
+#about #right_box h3{
+    color: #fff;
+    font: 1.2rem;
+}
+#about #right_box p{
+    color:rgb(185, 178, 178);
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+#about img{
+    height: 22rem;
+    width: 50%;
+}
+#about .responsive{
+    display: flex;
+}
+/* OUR MENU */
+#menu{
+    color:#fff;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Noto Sans', sans-serif;
+    /* height: 36rem; */
+    background-color: black;
+    /* background-image: linear-gradient(to right top, #000000, #1e1717, #352724, #4b392f, #5f4e3a); */
+    /* background-image: linear-gradient(to right top, #000000, #120b0d, #1d1315, #27191b, #321f21, #3a2425, #422a29, #4a302c, #50372f, #563e32, #5b4636, #5f4e3a); */
+    
+}
+#menu ul{
+    padding:0rem 3rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+#menu ul li{
+    height:14rem;
+    width:14rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    /* border:1px solid rgb(92, 83, 83) ; */
+    padding-top: 1.5rem;
+    /* box-shadow: rgba(203, 198, 198, 0.35) 0px 5px 15px; */
+    /* box-shadow: rgba(211, 211, 223, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(225, 222, 222, 0.17) 0px -23px 25px 0px inset, rgba(203, 199, 199, 0.15) 0px -36px 30px 0px inset, rgba(138, 135, 135, 0.1) 0px -79px 40px 0px inset, rgba(109, 107, 107, 0.06) 0px 2px 1px, rgba(130, 127, 127, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(124, 120, 120, 0.09) 0px 16px 8px, rgba(60, 59, 59, 0.09) 0px 32px 16px;
+}
+#menu ul li img{
+    height:4rem ;
+
+}
+#menu ul li span{
+    font-size: 0.5rem;
+}
+#menu ul li p{
+    font-size: 1rem;
+}
+#menu .responsive .star{
+    color:goldenrod ;
+}
+/* PRODUCTS */
+#products{
+    background-color: black;
+    color:#fff;
+}
+#products ul {
+    list-style: none;
+    display: flex;
+    padding-left: 3rem;
+}
+#products ul li{
+    color: #fff;
+    height:20rem;
+    width:14rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    border:1px solid rgb(92, 83, 83) ;
+    padding-top: 1.5rem;
+    border-radius: 2rem 0rem 2rem 0rem;
+text-align: center;
+/* box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; */
+box-shadow: #f3f0ee -5px 5px, #c8c5c3 -10px 10px, #85827f -15px 15px, #555453 -20px 20px, #2f2e2e -25px 25px;
+
+}
+#products ul li h6{
+    font-size: 1rem;
+}
+#products ul li img{
+    height: 8rem;
+    
+}
+#products .boxes{
+    color:white;
+    border:1px solid white;
+    height:1.5rem;
+    width: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+}
+#products .responsive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#products .star{
+    color:rgb(167, 139, 69) ;
+}
+#products p{
+    font-size: 1rem;
+}
+#products p span,#menu p span{
+    font-size: 0.5rem;
+    text-decoration: line-through;
+}
+/* REVIEW */
+#review{
+    
+    background-color: black;
+    color:#fff ;
+    padding:1rem;
+    overflow-x: hidden;
+    padding-top: 3rem;
+}
+#review ul{
+    padding:0rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 3rem;
+    
+}
+#review ul li{
+    color:rgb(139, 130, 130);
+    height:15rem;
+    width:15rem;
+    border:1px solid rgb(139, 130, 130);
+    padding:1rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(222, 214, 214, 0.25) 0px 54px 55px, rgba(164, 158, 158, 0.12) 0px -12px 30px, rgba(238, 233, 233, 0.12) 0px 4px 6px, rgba(196, 182, 182, 0.17) 0px 12px 13px, rgba(198, 187, 187, 0.09) 0px -3px 5px;
+}
+
+#review ul li:hover,#products ul li:hover,#menu ul li:hover{
+    color:#000;
+    background-color: #D4AC7C;
+}
+#menu ul li:hover{
+    /* box-shadow: rgba(239, 239, 241, 0.1) 0px 8px 24px, rgba(218, 218, 222, 0.1) 0px 16px 56px, rgba(174, 174, 176, 0.1) 0px 24px 80px; */
+    box-shadow: #33363d 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#review ul li img{
+    height:2rem;
+    border-radius: 50%;
+}
+#review ul li img:hover{
+    color: #000;
+}
+#products ul li i:hover{
+    color:#000;
+}
+ .star{
+    color:rgb(167, 139, 69);
+}
+#review .star{
+    color:rgb(167, 139, 69);
+}
+/* MAPS */
+#map{
+    background-color: black;
+    padding:1rem;
+}
+#map .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height:5rem; */
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:29rem;
+    height:22rem;
+}
+.gmap_canvas {overflow:hidden;
+    background:none!important;
+    width:29rem;
+    height:22rem;}
+.gmap_iframe {
+    width:600px!important;height:400px!important;
+}
+.touch{
+    /* border:1px solid white; */
+    color:white;
+    height:22rem;
+    width:29rem;
+    padding:2rem 1rem;
+    text-align: center;
+    background-color: rgb(25, 25, 33);
+}
+.touch .input_icons{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(25, 25, 33);
+    border:2px solid rgb(48, 48, 55);
+    padding-left:1rem;
+    margin-bottom: 1.5rem;
+}
+.touch input{
+    color:white;
+    background-color: rgb(25, 25, 33);
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: hidden;
+    height:2.5rem;
+    padding-left:0.5rem;
+    font-size: 0.8rem;
+    width:100%;
+    outline:none;
+    
+}
+
+#map .touch i{
+    color:white ;
+    font-size: 0.6rem;
+}
+/* BLOGS */
+#blogs{
+    background-color: black;
+    text-align: center;
+    color:#fff;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+#blogs p{
+    font-size: 1rem;
+}
+#blogs p span{
+    color:#D4AC7C ;
+    font-size: 0.8rem;
+}
+#blogs p lorem1 {
+    font-size: 0.7rem;
+}
+#blogs ul{
+    display: flex;
+    justify-content: center;
+    align-items:  center ;
+    padding:0rem 1rem;
+    list-style: none;
+}
+#blogs ul li{
+    margin-right: 2rem;
+    border:1px solid rgb(139, 130, 130);
+    padding: 0rem 0rem;
+    width:28%;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+   
+    box-shadow: rgba(243, 243, 246, 0.1) 0px 4px 16px, rgba(165, 165, 168, 0.1) 0px 8px 24px, rgba(91, 91, 92, 0.1) 0px 16px 56px;
+}
+#blogs ul li img{
+    height:12rem;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+}
+footer{
+    color:rgb(139, 130, 130);
+    background-color: #000;
+    text-align: center;
+    font-size: 1rem;
+    padding:1rem;
+}
+@media(max-width:858px){
+    .checkbtn{
+        display: block; 
+    }
+    nav img{
+        height: 3rem;
+    }
+    nav .menu{
+        position: fixed;
+        width:100%;
+        height:100vh;
+         top:8rem;
+         left:-100%;
+         text-align: center;
+         transition:all 0.5s; 
+         display: block;
+         background-color: rgba(0,0,0,0.9);
+    }
+    nav .menu li{
+        display: block;
+        margin-bottom: 1rem;
+    }
+    nav .menu li a{
+        font-size: 1.5rem;
+    }
+    #check:checked ~ .menu{
+        left:0;
+
+    }
+    nav .menu2{
+        display: none;
+    }
+    nav .menu li a:hover{
+        color:#fff;
+        transition:0.3s all ease;
+    }
+    .nav_bar .box h1{
+        font-size: 1rem;
+    }
+    body{
+        font-size: 80%;
+    }
+    /* ABOUT US */
+    #about{
+        margin:0;
+        padding: 0;
+    }
+    #menu,#products,#blogs,#review,#about #right_box{
+        height:15rem;
+        overflow: hidden;
+    }
+    #menu a,#products a,#blogs a,#review a,#about a{
+        color:rgb(127, 152, 206);
+        text-decoration: none;
+    }
+    #menu a,#products a,#blogs a,#review a,#about a:hover{
+        color: #000;
+    }
+    #map, #map .contact{
+        margin:0;
+        padding:0;
+    }
+    #about .responsive,#menu .responsive ul, #menu ul li, #products .responsive ul, #review ul , #map .contact,#map .contact .touch ,#blogs ul {
+        display:block;
+        width: 100%;
+        
+    }
+    #products .responsive ul , #review ul li {
+        margin:1% 5%;
+        width:90%;
+        /* border:1px solid rgb(178, 178, 19); */
+       
+      
+    }
+    #blogs ul li{
+        width:100%;
+        margin-bottom: 1rem;
+    }
+    #map .contact .mapouter{
+        margin:0rem 0rem;
+        overflow: hidden;
+        /* height:2rem; */
+        /* width:17.5rem; */
+        width:100%;
+        /* border:1px solid red; */
+        /* display: none; */
+        /* position: relative; */
+    }
+    #about img{
+        width:100%;
+        height:12rem;
+    }
+   
+}

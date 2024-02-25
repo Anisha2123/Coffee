@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/db45c1e017.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_div">
+        <section class="nav_bar" id="nav_bar">
+            <nav>
+                <img src="images/logo.png">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn"><i class="fas fa-bars"></i> </label>
+                <ul class="menu">
+                    <li><a href="#nav_bar">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#map">Contact</a></li>
+                    <li><a href="#blogs">Blogs</a></li> 
+                </ul>
+                <ul class="menu2">
+                    <li><i onclick="mySearch()" class="fa-solid fa-magnifying-glass-plus"></i></li>
+                    <li><i onclick="myCart()" class="fa-solid fa-cart-plus"></i></li>
+                </ul>
+            </nav>
+            <hr>
+            <div style="display: flex; width: 100%;">
+            <div class="box"><h1>FRESH COFFEE IN <br>THE MORNING</h1>
+            <br><p style="color:rgb(139, 130, 130);font-family: 'Cormorant', serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquid enim beatae ad quidem pariatur asperiores quae excepturi nam deserunt!</p><br>
+            <button>Get it Now</button>
+        </div>
+        <input type="text" class="search" id="search">
+        <div class="cart" id="cart">
+            <div class="boxes" id="box1">
+                <img src="images/cart-item-1.png">
+                <div style="display: flex;">
+                    <div style=" margin-left: 0.4rem;margin-top: 0.5rem;"><span style="margin-left: 0.1rem;">Cart Item 01 </span><p style="color:#D4AC7C; font-size: 0.7rem; ">$15.99/-</p></div>
+            </div>
+            <i class="fa-solid fa-xmark" style="margin-top: 0.6rem;" onclick="cross1()"></i>
+        </div>
+        <div class="boxes" id="box2">
+            <img src="images/cart-item-2.png">
+            <div style="display: flex;">
+                <div style=" margin-left: 0.4rem;margin-top: 0.5rem;"><span style="margin-left: 0.1rem;">Cart Item 02 </span><p style="color:#D4AC7C; font-size: 0.7rem; ">$15.99/-</p></div>
+        </div>
+        <i class="fa-solid fa-xmark" style="margin-top: 0.6rem;"  onclick="cross2()"></i>
+    </div>
+    <div class="boxes" id="box3">
+        <img src="images/cart-item-3.png">
+        <div style="display: flex;">
+            <div style=" margin-left: 0.4rem;margin-top: 0.5rem;"><span style="margin-left: 0.1rem;">Cart Item 03 </span><p style="color:#D4AC7C; font-size: 0.7rem; ">$15.99/-</p></div>
+    </div>
+    <i class="fa-solid fa-xmark" style="margin-top: 0.6rem;"  onclick="cross3()"></i>
+</div>
+<div class="boxes" id="box4">
+    <img src="images/cart-item-4.png">
+    <div style="display: flex;">
+        <div style="margin-top: 0.5rem; margin-left: 0.1rem;"><span style="margin-left: 0.1rem;">Cart Item 04 </span><p style="color:#D4AC7C; font-size: 0.7rem; ">$15.99/-</p></div>
+</div>
+<i class="fa-solid fa-xmark" style="margin-top: 0.6rem;"  onclick="cross4()"></i>
+</div>
+<button>Checkout Now</button>
+        </div>
+        </div>
+        </section>
+        <section id="about">
+            <h1><span style="color: #D4AC7C;">ABOUT</span> US</h1><br>
+            <div class="responsive">
+            <img src="images/about-img.jpeg">
+            <div id="right_box">
+                <h3>What Makes Our Coffee Special?</h3>
+                <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod minima ipsum nemo rerum eos voluptates dolore, consequuntur in aliquid maiores, ullam tenetur harum unde repellendus expedita ipsam aspernatur, error culpa est beatae sunt iste. Nulla perferendis, recusandae soluta quis blanditiis enim nostrum dolore. Accusantium, quisquam maiores.
+                    <a href="#" onclick="link()">Read More</a> 
+                    <br><br>Itaque blanditiis a mollitia illo, sequi culpa facilis! Voluptas voluptatibus aut amet nisi quasi?
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi in reiciendis beatae eum eveniet rem aperiam et ad nisi, libero, eius ipsum, voluptates magni aut aliquid assumenda doloremque cum est?
+                </p><br>
+                <button>Learn More</button>
+            </div>
+        </div>
+        </section>
+        <section id="menu">
+            <h1 style="text-align:center;">OUR<span style="color: #D4AC7C;"> MENU</span></h1><br>
+            <div class="responsive">
+            <ul>
+                <li>
+                    <img src="images/menu-1.png">
+                    <br>
+                    <h6 style="font-weight: bold;">Tasty and Healthy</h6>
+                    <p>$15.99<span>&emsp;$20.99</span></p>
+                    <br><button>Add To Cart</button>
+                </li>
+                <li>
+                    <img src="images/menu-2.png">
+                    <br>
+                    <h6 style="font-weight: bold;">Tasty and Healthy</h6>
+                    <p>$15.99<span>&emsp;$20.99</span></p>
+                    <br><button>Add To Cart</button>
+                </li>
+                <li>
+                    <img src="images/menu-3.png">
+                    <br>
+                    <h6 style="font-weight: bold;">Tasty and Healthy</h6>
+                    <p>$15.99<span>&emsp;$20.99</span></p>
+                    <br><button>Add To Cart</button>
+                </li>
+            </ul>
+           
+        </div>
+        <div class="responsive">
+            <ul>
+                <li>
+                    <img src="images/menu-1.png">
+                    <br>
+                    <h6 style="font-weight: bold;">Tasty and Healthy</h6>
+                    <p>$15.99<span>&emsp;$20.99</span></p>
+                    <br><button>Add To Cart</button>
+                </li>
+                <li>
+                    <img src="images/menu-2.png">
+                    <br>
+                    <h6 style="font-weight: bold;">Tasty and Healthy</h6>
+                    <p>$15.99<span>&emsp;$20.99</span></p>
+                    <br><button>Add To Cart</button>
+                </li>
+                <li>
+                    <img src="images/menu-3.png">
+                    <br>
+                    <h6 style="font-weight: bold;">Tasty and Healthy</h6>
+                    <p>$15.99<span>&emsp;$20.99</span></p>
+                    <br><button>Add To Cart</button>
+                </li>
+            </ul>
+           
+        </div>
+        </section>
+        <section id="products">
+            <h1 style="text-align:center;">LATEST <span style="color: #D4AC7C;"> PRODUCTS</span></h1><br>
+            <div class="responsive">
+                <ul>
+                    <li><div style="display:flex;align-items: center;justify-content: center;"><i class="fa-solid fa-cart-shopping boxes"></i>
+                        <i class="fa-solid fa-heart boxes"></i>
+                        <i class="fa-solid fa-eye boxes"></i>
+                        </div>
+                        <br>
+                        <div style="display: flex;align-items: center;justify-content: center;">
+                            <img src="images/product-1.png"></div>
+                        <br><h6>Fresh Coffee</h6><br>
+                        <div style="display:flex;align-items: center;justify-content: center;">
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-regular fa-star-half-stroke star"></i>
+                        </div><br>
+                        <p>$15.99<span>&emsp;$20.99</span></p>
+                        
+                    </li>
+                    <li><div style="display:flex;align-items: center;justify-content: center;"><i class="fa-solid fa-cart-shopping boxes"></i>
+                        <i class="fa-solid fa-heart boxes"></i>
+                        <i class="fa-solid fa-eye boxes"></i>
+                        </div>
+                        <br>
+                        <div style="display: flex;align-items: center;justify-content: center;">
+                            <img src="images/product-2.png"></div>
+                        <br><h6>Fresh Coffee</h6><br>
+                        <div style="display:flex;align-items: center;justify-content: center;">
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-regular fa-star-half-stroke star"></i>
+                        </div><br>
+                        <p>$15.99<span>&emsp;$20.99</span></p>
+                        
+                    </li>
+                    <li><div style="display:flex;align-items: center;justify-content: center;"><i class="fa-solid fa-cart-shopping boxes"></i>
+                        <i class="fa-solid fa-heart boxes"></i>
+                        <i class="fa-solid fa-eye boxes"></i>
+                        </div>
+                        <br>
+                        <div style="display: flex;align-items: center;justify-content: center;">
+                            <img src="images/product-3.png"></div>
+                        <br><h6>Fresh Coffee</h6><br>
+                        <div style="display:flex;align-items: center;justify-content: center;">
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-regular fa-star-half-stroke star"></i>
+                        </div><br>
+                        <p>$15.99<span>&emsp;$20.99</span></p>
+                        
+                    </li>
+                </ul> 
+            </div>
+           
+           
+            
+        </section>
+        <section id="review">
+            <h1 style="text-align:center;">CUSTOMER<span style="color: #D4AC7C;"> REVIEWS</span></h1><br>
+            <ul>
+                <li>
+                    <img src="images/quote-img.png">
+                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque modi cum omnis eos, aliquid laborum dolores magnam maiores accusamus ratione. Numquam, sequi culpa qui illum fugiat esse facilis doloremque ab, eum maiores rem voluptatum?<br><br>
+                    <img src="images/pic-1.png"><br>
+                    <p style="color:white;">John Das</p>
+                    <div style="display:flex;align-items: center;justify-content: center;">
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-regular fa-star-half-stroke star"></i>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/quote-img.png">
+                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque modi cum omnis eos, aliquid laborum dolores magnam maiores accusamus ratione. Numquam, sequi culpa qui illum fugiat esse facilis doloremque ab, eum maiores rem voluptatum?<br><br>
+                    <img src="images/pic-1.png"><br>
+                    <p style="color:white;">John Das</p>
+                    <div style="display:flex;align-items: center;justify-content: center;">
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-regular fa-star-half-stroke star"></i>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/quote-img.png">
+                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque modi cum omnis eos, aliquid laborum dolores magnam maiores accusamus ratione. Numquam, sequi culpa qui illum fugiat esse facilis doloremque ab, eum maiores rem voluptatum?<br><br>
+                    <img src="images/pic-1.png"><br>
+                    <p style="color:white;">John Das</p>
+                    <div style="display:flex;align-items: center;justify-content: center;">
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-regular fa-star-half-stroke star"></i>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="map">
+            <h1><span style="color: #D4AC7C;">CONTACT</span> US</h1><br>
+            <div class="contact" >
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=STARBUCKS&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">https://mcpenation.com</a></div></div>
+            <div class="touch">
+                <h1>GET IN TOUCH</h1><br><br>
+                <form>
+                    <div class="input_icons" >
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name" id="name">
+                    </div>
+                    <div class="input_icons">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Email"  id="email">
+                    </div>
+                    <div class="input_icons">
+                        <i class="fa-solid fa-phone" ></i>
+                        <input type="number" placeholder="Number" id="number">
+                    </div>
+                    <button onclick="sendEmail()">Contact Now</button>
+                   
+                </form>
+            </div>
+            </div>
+            
+        </section>
+        <section id="blogs">
+            <h1><span style="color: #D4AC7C;">OUR</span> BLOGS</h1><br>
+            <ul>
+                <li>
+                    <img src="images/blog-1.jpeg"><br>
+                    <p>Tasty And Refreshing Coffee<span><br>By Admin /1st May, 2021</span><br>
+                    <lorem1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis velit natus debitis quas?</lorem1></p><br>
+                    <button>Read More</button>
+                </li>
+                <li>
+                    <img src="images/blog-2.jpeg"><br>
+                    <p>Tasty And Refreshing Coffee<span><br>By Admin /1st May, 2021</span><br>
+                    <lorem1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis velit natus debitis quas?</lorem1></p><br>
+                    <button>Read More</button>
+                </li>
+                <li>
+                    <img src="images/blog-3.jpeg"><br>
+                    <p>Tasty And Refreshing Coffee<span><br>By Admin /1st May, 2021</span><br>
+                    <lorem1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis velit natus debitis quas?</lorem1></p><br>
+                    <button>Read More</button>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            Copyright © 2022 All rights reserved<br>
+            Made By Anisha Birla
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
